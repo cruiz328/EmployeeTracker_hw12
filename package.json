@@ -1,0 +1,21 @@
+{
+  "name": "employeetracker_hw12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruiz328/EmployeeTracker_hw12.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cruiz328/EmployeeTracker_hw12/issues"
+  },
+  "homepage": "https://github.com/cruiz328/EmployeeTracker_hw12#readme",
+  "keywords": []
+}
