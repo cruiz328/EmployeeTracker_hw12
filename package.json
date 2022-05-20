@@ -17,5 +17,10 @@
     "url": "https://github.com/cruiz328/EmployeeTracker_hw12/issues"
   },
   "homepage": "https://github.com/cruiz328/EmployeeTracker_hw12#readme",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^2.3.3"
+  }
 }

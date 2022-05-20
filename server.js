@@ -1,24 +1,36 @@
+const inquirer = require('inquirer');
+const mysql = require('mysql2');
 
-   
-const express = require('express');
-const db = require('./db/connection');
-const apiRoutes = require('./routes/apiRoutes');
+// Connect to database
+const db = mysql.createConnection(
+  {
+    host: 'localhost',
+    // MySQL username,
+    user: 'root',
+    // {TODO: Add your MySQL password}
+    password: 'password',
+    database: 'employee_tracker'
+  },
+  console.log(`Connected to the employee_tracker database.`)
+);
 
-const PORT = process.env.PORT || 3001; 
-const app = express();
+inquirer
+  .prompt([
+    // {
+    //   type: 'input',
+    //   name: 'name',
+    //   message: 'What is your name?'
+    // },
+    {
+      type: 'list',
+      message: 'Which do you want to see?',
+      name: 'View',
+      choices: ['View all departments', 'View all roles']
+    },
+  ])
 
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-
-
-app.use('/api', apiRoutes);
-
-
-db.connect(err => {
-    if (err) throw err;
-    console.log('Database connected');
-
-    app.listen(PORT, () => {
-        console.log(`Server is now running on port ${PORT}`);
-    });
-});
+  .then(data => {
+    if (data.View == 'View all departments') {
+        
+    }
+  });
