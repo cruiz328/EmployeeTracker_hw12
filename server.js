@@ -14,6 +14,7 @@ const db = mysql.createConnection(
   console.log(`Connected to the employee_tracker database.`)
 );
 
+function start() {
 inquirer
   .prompt([
     // {
@@ -31,6 +32,12 @@ inquirer
 
   .then(data => {
     if (data.View == 'View all departments') {
-        
+        db.query('SELECT * FROM department', function (err, results) {
+            console.log(results);
+            start()
+          });
     }
   });
+}
+
+start()
