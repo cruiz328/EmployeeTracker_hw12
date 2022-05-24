@@ -68,7 +68,7 @@ const promptOption = async () => {
 
 // EXIT function 
 function exit() {
-    console.log('Thank you for using Employee Tracker!')
+    console.log('This is the employee tracker, beware!')
     db.end();
     process.exit();
 };
