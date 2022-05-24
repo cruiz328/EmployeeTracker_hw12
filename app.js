@@ -82,7 +82,7 @@ function viewAllDepartments () {
         if(err) throw err;
         console.table(row);
         console.log('===END DEPARTMENTS LIST===\n');
-        // promptOption();
+        promptOption();
     });
 };
 
@@ -163,12 +163,12 @@ function viewAllRoles() {
                 LEFT JOIN department on role.department_id = department.id
                 ORDER BY department_id`;
     
-    // db.query(sql, (err, row) => {
-    //     if(err) throw err;
-    //     console.table(row);
-    //     console.log('===END ROLE LIST===\n')
-    //     promptOption();
-    // });
+    db.query(sql, (err, row) => {
+        if(err) throw err;
+        console.table(row);
+        console.log('===END ROLE LIST===\n')
+        promptOption();
+    });
 };
 
 function addNewRole() {

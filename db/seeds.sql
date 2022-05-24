@@ -1,44 +1,40 @@
 INSERT INTO department (name)
 VALUES
-('Sales'),
-('Finance'),
-('Service'),
-('Parts'),
-('Administration');
+('Managerial Staff'),
+('Customer Service'),
+('Leads'),
+('Administration'),
+('Associates');
 
 INSERT INTO role (title, salary, department_id)
 VALUES 
-('General Sales Manager', 200000.00, 1),
-('Sales Manager', 100000.00, 1),
-('Sales Person', 150000.00, 1),
-('Sales Support', 60000.00, 1),
-('Finance Director', 250000.00, 2),
-('Finance Manager', 200000.00, 2),
-('Service Director', 300000.00, 3),
-('Service Writer', 80000.00, 3),
-('Lot Coordinator', 45000.00, 3),
-('Parts Manager', 60000.00, 4),
-('Parts Cashier', 30000, 4),
-('Controller', 300000.00, 5),
-('Administrator', 80000.00, 5),
-('General Manager', 400000.00, 5);
-
+('General Store Manager', 800000.00, 1),
+('Department Manager', 650000.00, 1);
+('Admin', 60000.00, 2),
+('Customer Support', 55000.00, 2),
+('Shift Lead', 455000.00, 3),
+('Team Lead', 450000.00, 3),
+('Key Holder', 400000.00, 4),
+('Goods Buyer', 40000.00, 4),
+('Merchandise Director', 350000.00, 4),
+('Retail Associate', 300000.00, 5),
+('Custdoial Member', 30000.00, 5),
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES 
-('Craig', 'Hausteen', 14, null),
-('Jim', 'Thomas', 1, 1),
-('Richard', 'Yoneji', 2, 2),
-('Ebrahim', 'Kourer', 2, 2),
-('Prac', 'Kaffli', 3, 2),
-('Charles', 'Fred', 3, 2),
-('Luan', 'Jenkins', 3, 4),
-('Guddi', 'Sandyall', 3, 4),
-('Javi', 'Flor', 4, 1),
-('Christy', 'Cortz', 5, 1),
-('Billy', 'Chan', 6, 10),
-('Ben', 'Jamin', 6, 10),
-('Bob', 'Urt', 7, 1),
-('Dillan', 'Stan', 8, 13),
-('Amir', 'Khaleed', 8, 13),
-('Katie', 'Pengui', 12, null);
+('Laura', 'Gutierrez de Ruiz', 04, 01),
+('Sam', 'Goot', 01, null),
+('Karla', 'Chacon', 02, 02),
+('Luis E.', 'Ruiz', 02, 02),
+('Sandra', 'Vasquez', 03, 02),
+('Carlos', 'Concuan', 03, 02),
+('Bert', 'Kreisher', 03, null),
+('Daniel', 'Olivares', 03, 4),
+('Jose', 'Gonzalez', 04, 01),
+('Esteban', 'Trabajos', 05, 01),
+('Uberto', 'Caros', 06, 07),
+('Ben', 'Dover', 06, 03),
+('Mike', 'Coxlung', 07, 01),
+('Barry', 'Alan', 08, 07),
+('Bruce', 'Wayne', 08, 09),
+('Jesus', 'Christ', 05, 07);
