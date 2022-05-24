@@ -8,17 +8,17 @@ VALUES
 
 INSERT INTO role (title, salary, department_id)
 VALUES 
-('General Store Manager', 800000.00, 1),
-('Department Manager', 650000.00, 1);
+('General Store Manager', 800000, 1),
+('Department Manager', 650000.00, 1),
 ('Admin', 60000.00, 2),
-('Customer Support', 55000.00, 2),
-('Shift Lead', 455000.00, 3),
-('Team Lead', 450000.00, 3),
-('Key Holder', 400000.00, 4),
-('Goods Buyer', 40000.00, 4),
-('Merchandise Director', 350000.00, 4),
-('Retail Associate', 300000.00, 5),
-('Custdoial Member', 30000.00, 5),
+('Customer Support', 55000, 2),
+('Shift Lead', 455000, 3),
+('Team Lead', 450000, 3),
+('Key Holder', 400000, 4),
+('Goods Buyer', 40000, 4),
+('Merchandise Director', 350000, 4),
+('Retail Associate', 300000, 5),
+('Custdoial Member', 30000, 5);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES 
